@@ -11,10 +11,12 @@ let bodyParser = require('body-parser');
 let cookieParser = require('cookie-parser');
 let morgan = require('morgan');
 let api = rootRequire('api');
+let cors = require('cors');
 
 let app = express();
 
 // setup global middleware
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());

@@ -4,14 +4,16 @@ let express = require('express');
 let router = express.Router();
 
 // controllers
-let test = rootRequire('api/controllers/ok');
+let ok = rootRequire('api/controllers/ok');
 
-// middleware
-let checkName = rootRequire('api/middleware/checkName');
+let hit = rootRequire('api/controllers/hit');
+
+//middleware
+let checkUrl = rootRequire('api/middleware/checkUrl');
 
 // define routes
-router.get('/', checkName, ok);
-
+router.get('/', ok);
+router.get('/hit', checkUrl, hit);
 // router.put('/', )
 
 module.exports = router;

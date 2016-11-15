@@ -1,6 +1,16 @@
 {
-    "data": [{
-        "url": "http://daksong.daknong.gov.vn/",
-        "hit_total": 100
-    }]
+  "data": [
+    {
+      "url": "http://daksong.daknong",
+      "hit_total": 16
+    },
+    {
+      "url": "http://daksong.daknongdfsdf",
+      "hit_total": 4
+    },
+    {
+      "url": "http://daksong.daknongdfsdfsd",
+      "hit_total": 2
+    }
+  ]
 }

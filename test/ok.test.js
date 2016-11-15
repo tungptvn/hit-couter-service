@@ -4,17 +4,17 @@ let request = require('supertest');
 let expect = require('expect.js');
 let app = require('../app');
 
-describe('Hello Route', () => {   
-    it('says hello', (done) => { 
+describe('test ok', () => {   
+    it('ok?', (done) => { 
         request(app)
             .get('/')
-            .query({ name: 'Bob' })
-            .expect(saysHelloBob)
+            .query()
+            .expect(testok)
             .end(done);
     });
 });
 
-function saysHelloBob(res) {
+function testok(res) {
     expect(res.status).to.equal(200);
-    expect(res.text).to.equal('Hello Bob')
+    expect(res.text).to.equal('OK')
 }
